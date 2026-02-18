@@ -28,6 +28,7 @@ All Hyprland and greetd logs in the greeter session are redirected to `/dev/null
 - greetd
 - Hyprland
 - Quickshell
+- UWSM
 - seatd (device access for the greeter session)
 - systemd
 - Linux (tested on Arch Linux)

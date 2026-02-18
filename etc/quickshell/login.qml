@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Layouts
 import Quickshell
 import Quickshell.Services.Greetd
+import Quickshell.Hyprland
 
 FloatingWindow {
     property string username: ""
@@ -142,7 +143,8 @@ FloatingWindow {
         
         function onReadyToLaunch() {
             // Launch default session (Hyprland)
-            Greetd.launch(["start-hyprland > /dev/null 2>&1"])
+            Hyprland.dispatch("exit")
+            Greetd.launch(["uwsm start hyprland.desktop > /dev/null 2>&1"])
         }
     }
 }
